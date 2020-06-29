@@ -1,2 +1,46 @@
+$tablet-width: 768px
+$desktop-width: 1024px
+
+=tablet
+  @media (min-width: #{$tablet-width})
+    @content
+
+=desktop
+  @media (min-width: #{$desktop-width})
+    @content
+
 body
-  font-family: sans-serif
+  font-family: 'Fira Sans', sans-serif;
+  color: #555
+  font-weight: 300
+  font-size: 15px
+
+.interface-1
+  .container
+    max-width: 940px
+    margin: 0 auto
+    padding: 10px
+    display: grid
+    grid-template-columns: 1fr
+    gap: 30px
+    justify-items: center
+    justify-content: center
+
+    +tablet
+      grid-template-columns: repeat(2, 1fr)
+
+    +desktop
+      grid-template-columns: repeat(4, 1fr)
+
+  .element
+    max-width: 240px
+
+    img
+      display: block
+      width: 140px
+      margin-left: auto
+      margin-right: auto
+
+    h2
+      font-weight: 300
+      color: #77BB8D

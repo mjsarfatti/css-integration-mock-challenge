@@ -79,7 +79,55 @@ textarea {
      Author's custom styles
      ========================================================================== */
 body {
-  font-family: sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+  color: #555;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.interface-1 .container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 30px;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .interface-1 .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .interface-1 .container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.interface-1 .element {
+  max-width: 240px;
+}
+
+.interface-1 .element img {
+  display: block;
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.interface-1 .element h2 {
+  font-weight: 300;
+  color: #77BB8D;
 }
 
 /* ==========================================================================
