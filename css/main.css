@@ -132,6 +132,104 @@ textarea {
 
 .interface-2 {
   font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+.interface-2 .widget {
+  width: 276px;
+  margin: 10px;
+  padding: 22px 22px 0;
+  background-color: #468EF0;
+  border-radius: 2px;
+  color: white;
+}
+
+.interface-2 .widget h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.interface-2 .widget .users-right-now {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.interface-2 .widget .chart {
+  height: 100px;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[30];
+      grid-template-columns: repeat(30, 1fr);
+  gap: 1px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.interface-2 .widget .chart .bar {
+  background-color: white;
+}
+
+.interface-2 .widget table {
+  width: 100%;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+}
+
+.interface-2 .widget table thead {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.interface-2 .widget table thead th {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.interface-2 .widget table tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.interface-2 .widget table td.number, .interface-2 .widget table th.number {
+  text-align: right;
+}
+
+.interface-2 .widget table tbody td {
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+.interface-2 .widget .action a {
+  display: block;
+  -webkit-transition: all 140ms linear;
+  transition: all 140ms linear;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  margin-left: -22px;
+  margin-right: -22px;
+  padding: 10px 16px 8px 22px;
+  text-align: right;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.interface-2 .widget .action a:hover, .interface-2 .widget .action a:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.interface-2 .widget .action a svg {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 
 /* ==========================================================================

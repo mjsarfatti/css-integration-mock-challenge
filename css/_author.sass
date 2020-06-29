@@ -48,3 +48,81 @@ body
 
 .interface-2
   font-family: Roboto, sans-serif
+  font-weight: 300
+
+  .widget
+    width: 276px
+    margin: 10px
+    padding: 22px 22px 0
+    background-color: #468EF0
+    border-radius: 2px
+    color: white
+
+    h2
+      margin-top: 0
+      margin-bottom: 16px
+      font-size: 13px
+      line-height: 1
+      font-weight: normal
+      color: rgba(255, 255, 255, 0.9)
+
+    .users-right-now
+      margin-top: 0
+      margin-bottom: 26px
+      font-size: 50px
+      line-height: 1
+
+    .chart
+      height: 100px
+      margin-top: 10px
+      display: grid
+      grid-template-columns: repeat(30, 1fr)
+      gap: 1px
+      align-items: end;
+
+      .bar
+        background-color: white
+
+    table
+      width: 100%
+      margin-bottom: 24px
+      border-collapse: collapse
+
+      thead
+        font-size: 12px
+        line-height: 1.6
+
+        th
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+          font-weight: normal
+          text-align: left
+          color: rgba(255, 255, 255, 0.8)
+
+      tr:not(:last-child) td
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+
+      td.number, th.number
+        text-align: right
+
+      tbody td
+        font-size: 13px
+        line-height: 2
+        letter-spacing: 0.03em
+
+    .action a
+      display: block
+      transition: all 140ms linear
+      color: white
+      text-decoration: none
+      font-size: 13px
+      margin-left: -22px
+      margin-right: -22px
+      padding: 10px 16px 8px 22px
+      text-align: right
+      border-top: 1px solid rgba(255, 255, 255, 0.2)
+
+      &:hover, &:focus
+        background-color: rgba(255, 255, 255, 0.1)
+
+      svg
+        transform: translateY(-1px)
